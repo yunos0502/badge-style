@@ -1,3 +1,7 @@
+# 아이콘 뱃지 컴포넌트
+
+Antd를 이용한 버전과 순수하게 css를 이용한 버전으로 구성되어 있습니다.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
