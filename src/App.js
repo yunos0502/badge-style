@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from '@emotion/styled';
+import AntBadgeStyle from './components/AntBadgeStyle';
+import BadgeStyle from './components/BadgeStyle';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrap>
+        <div className="antBadgeWrap">
+          <h1>antd + badge</h1>
+          <AntBadgeStyle badgeCount='9' iconStyle='home' badgeSize='small' />
+          <AntBadgeStyle badgeCount='999' iconStyle='alarm' badgeSize='small' />
+        </div>
+        <div className="badgeWrap">
+          <h1>pure badge</h1>
+          <BadgeStyle badgeCount='9' iconStyle='home' badgeSize='small' />
+          <BadgeStyle badgeCount='999' iconStyle='alarm' badgeSize='small' />
+        </div>
+      </Wrap>
     </div>
   );
 }
+
+const Wrap = styled.div`
+  width: 100vw;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: hidden;
+  
+  & > div {
+    padding: 20px;
+  }
+`;
 
 export default App;
