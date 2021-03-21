@@ -1,4 +1,4 @@
-# 심플 아이콘 뱃지 컴포넌트
+# Simple icon badge component
 
 Antd + @emotion/styled를 이용한 버전과 @emotion/styled만 이용한 버전으로 구성되어 있습니다.
 
